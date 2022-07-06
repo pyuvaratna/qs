@@ -3,20 +3,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QS</title>
+    <title>Qualishield</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <label for="homepage">Enter the link </label>
   <input type="url" id="homepage" name="homepage"><br><br>
-  <input type="submit"><br>
-  <input type="checkbox" name="check1" value="check">
-  <label for="vehicle1"> Test1</label><br>
-  <input type="checkbox" name="check2" value="check">
-  <label for="vehicle2"> Test2 </label><br>
-  <input type="checkbox" name="check3" value="check" checked>
-  <label for="vehicle3">Test3 </label><br><br>
-  <input type="submit" value="Submit">
+  
+  <input type="checkbox" name="Information Gathering" value="IG">
+  <label for="vehicle1"> Information Gathering</label><br>
+  <input type="checkbox" name="Configuration and Deployment Management Testing" value="CDMT">
+  <label for="vehicle1"> Configuration and Deployment Management Testing</label><br>
+  <input type="checkbox" name="Identity Management Testing" value="IMT">
+  <label for="vehicle1"> Identity Management Testing</label><br>
+  <input type="checkbox" name="Authentication Testin" value="AT">
+  <label for="vehicle1"> Authentication Testin</label><br> 
+  <input type="checkbox" name="Authorization Testing" value="AT">
+  <label for="vehicle1"> Authorization Testing</label><br> 
+  <input type="checkbox" name="Session Management Testing" value="SMT">
+  <label for="vehicle1"> Session Management Testing</label><br> 
+  <input type="checkbox" name="Input Validation Testing" value="IVT">
+  <label for="vehicle1"> Input Validation Testing</label><br> 
+  <input type="checkbox" name="Testing for Weak Cryptography" value="TWC">
+  <label for="vehicle1"> Testing for Weak Cryptography</label><br> 
+  <input type="checkbox" name="Testing for Error Handling" value="TEH">
+  <label for="vehicle1"> Testing for Error Handling</label><br> 
+  <input type="checkbox" name="Business Logic Testing" value="blT">
+  <label for="vehicle1"> Business Logic Testing<br> 
+  <input type="checkbox" name="Client-side Testing" value="CST">
+  <label for="vehicle1"> Client-side Testing/label<br> 
+
+  
+
+    <tr>
+        <td>Select a File to Load:</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><button onclick="loadFileAsText()">Load Selected File</button><td>
+    </tr>
+
+    
+    
+    <br><button type="button" onclick="alert('scan started')">start scan</button>
+    <br><button type="button" onclick="alert('scan stopped')">abort scan</button>
+     
+  
+    
 </body>
 </html>
