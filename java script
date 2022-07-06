@@ -9,3 +9,6 @@ function loadFileAsText(){
 
   fileReader.readAsText(fileToLoad, "UTF-8");
 }
+
+
+
