@@ -50,12 +50,12 @@
     <div class="search-container">
       <form action="/action_page.php">
         <input type="text" placeholder="Search.." name="search">
-         <button type="submit"><i class="fa fa-search"></i></button>
+        <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
         
 
-        <a href="#" id="btnAdd"><i class="icon-plus-sign-alt"></i> Add Tab</a>
+        <a href="#" id="btnAdd"><i class="icon-plus-sign-alt"></i> Scan</a>
         <br><br>
         <ul class="nav nav-tabs" id="tabs">
             <li class="active"><a href="#tab1">Tab 1</a></li>
@@ -92,11 +92,18 @@
       <input type="checkbox" name="Testing for Error Handling" value="CST">
       <label for="vehicle1"> Client-side Testing</label><br></body>
 
-    <br><br><tr>
+      <br><form action="/action_page.php">
+        <label for="homepage">Enter the Url</label>
+        <input type="url" id="homepage" name="homepage"><br><br>
+        
+      </form>    
+    
+    
+      <tr>
       <td>Select a File to Load:</td>
       <td><input type="file" id="fileToLoad"></td>
       <td><button onclick="loadFileAsText()">Load Selected File</button><td>
-    </tr><br>
+      </tr><br>
 
     <br><button type="button" class="btn btn-primary" onclick="alert('scan started')">start scan</button>
    <button type="button" class="btn btn-secondary" onclick="alert('scan stopped')">abort scan</button>
